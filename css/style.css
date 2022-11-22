@@ -5,6 +5,7 @@ html
 body
 {
     margin: 0 auto;
+    background-color: beige;
 }
 
 header
@@ -20,7 +21,7 @@ nav
 
 section
 {
-    width: 70%;
+    width: 80%;
     margin: 2rem auto;
 }
 
@@ -32,11 +33,10 @@ img
 
 #intro
 {
-    height: fit-content;
     display: grid;
     border: solid 1px;
+    height: fit-content;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
     grid-template-areas: 
         "title img"
         "text img";
@@ -52,12 +52,24 @@ img
     grid-area: text;
 }
 
-.intro-img
+.intro-image
 {
     grid-area: img;
+}
+
+.intro-image img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #gallery
 {
     display: flex;
+}
+
+footer
+{
+    background-color: #90BAED;
 }
