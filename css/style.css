@@ -55,10 +55,11 @@ img
     grid-template-areas: 
         "title img"
         "text img";
+    column-gap: 1rem;
 }
 
 /* The image gets too squished past a certain resolution, so I moved it below the text. */
-@media screen and (max-width: 600px)
+@media screen and (max-width: 650px)
 {
     #intro
     {
