@@ -118,3 +118,8 @@ footer
     background-color: #5e92d1;
     border-radius: 5px;
 }
+
+#dark-mode:hover
+{
+    cursor:pointer;
+}
