@@ -2,10 +2,26 @@ html
 {
     width: 100%;
 }
+
 body
 {
     margin: 0 auto;
     background-color: beige;
+}
+
+*
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1
+{
+    text-align: center;
+}
+
+h4
+{
+    margin: 0;
 }
 
 header
@@ -34,7 +50,6 @@ img
 #intro
 {
     display: grid;
-    border: solid 1px;
     height: fit-content;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -71,5 +86,6 @@ img
 
 footer
 {
+    text-align: center;
     background-color: #90BAED;
 }
