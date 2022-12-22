@@ -1,3 +1,5 @@
+/* To-Do:
+- Align header levels.  It's not good practice to skip from h1 to h3. */
 html
 {
     width: 100%;
@@ -9,7 +11,7 @@ body
     background-color: beige;
 }
 
-*
+.doc-text
 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -27,6 +29,7 @@ h4
 header
 {
     background-color: #90BAED;
+    padding: 5px 0
 }
 
 nav
@@ -123,4 +126,23 @@ footer
 #dark-mode:hover
 {
     cursor:pointer;
+}
+
+/* contact.html specific IDs & selectors */
+#contact-form
+{
+    padding: 1rem;
+    background-color: #90BAED;
+    border-radius: 10px;
+}
+
+#contact-form form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea
+{
+    resize: none;
 }
