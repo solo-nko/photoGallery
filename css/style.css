@@ -57,6 +57,15 @@ img
         "text img";
 }
 
+@media screen and (max-width: 600px)
+{
+    #intro
+    {
+        display: block;
+        height: fit-content;        
+    }
+}
+
 .intro-header
 {
     grid-area: title;
@@ -82,6 +91,14 @@ img
 #gallery
 {
     display: flex;
+}
+
+@media screen and (max-width:600px)
+{
+    #gallery
+    {
+        flex-direction: column;
+    }
 }
 
 footer
