@@ -50,6 +50,13 @@ img
     height: auto;
 }
 
+th,
+td,
+img
+{
+    border: 1px solid #5e92d1;
+}
+
 #intro
 {
     display: grid;
