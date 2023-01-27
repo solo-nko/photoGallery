@@ -35,7 +35,7 @@ header
 nav
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 section
@@ -136,6 +136,13 @@ footer
     padding: 1rem;
     background-color: #90BAED;
     border-radius: 10px;
+    min-width: 150px;
+    max-width: 40vw;
+}
+
+#contact-form h3
+{
+    text-align: center;
 }
 
 #contact-form form
