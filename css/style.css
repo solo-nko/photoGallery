@@ -68,6 +68,12 @@ img
     column-gap: 1rem;
 }
 
+#gallery
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /* The image gets too squished past a certain resolution, so I moved it below the text. */
 @media screen and (max-width: 650px)
 {
@@ -100,18 +106,10 @@ img
     object-fit: cover;
 }
 
-#gallery
-{
-    display: flex;
-}
-
 /* Work in progress.  I'd like to make this turn into a 4x4 grid if possible. */
 @media screen and (max-width:600px) 
 {
-    #gallery
-    {
-        flex-direction: column;
-    }
+    
 }
 
 footer
