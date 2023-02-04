@@ -141,10 +141,6 @@ footer
 
 
 /* -----gallery.html specific IDs & selectors----- */
-#gear-table
-{
-	width: 100%;
-}
 
 #gallery
 {
@@ -152,6 +148,11 @@ footer
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 0.25em;
 	/* grid-auto-flow: dense; */
+}
+
+#gear-table
+{
+	width: 100%;
 }
 
 #gallery img   /* Currently this is NOT actually specific to gallery.html, because the gallery index.html uses the same ID.*/
