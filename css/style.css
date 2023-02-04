@@ -106,7 +106,15 @@ footer
 	border-radius: 5px;
 }
 
-#dark-mode:hover
+#light-mode
+{
+	display: none;
+	padding: 2px;
+	background-color: #5e92d1;
+	border-radius: 5px;
+}
+
+.button:hover
 {
 	cursor:pointer;
 }
