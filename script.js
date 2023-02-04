@@ -5,12 +5,19 @@
 let modeDarkButton = document.getElementById("dark-mode");
 let modeLightButton = document.getElementById("light-mode");
 const docText = Array.from(document.getElementsByClassName("doc-text"));
+//light mode palette
+const bgColorLight = "#F5F5DC";
+const textColorLight = "#001D46";
+
+//dark mode palette
+const bgColorDark = "#001D46";
+const textColorDark = "#F5F5DC";
 
 function darkMode()
 {
-    document.body.style.backgroundColor = "#252729";
+    document.body.style.backgroundColor = bgColorDark;
     docText.forEach(element => {
-        element.style.color = "white";
+        element.style.color = textColorDark;
     })
     modeDarkButton.style.display = "none";
     modeLightButton.style.display = "inline-block";
@@ -18,9 +25,9 @@ function darkMode()
 
 function lightMode()
 {
-    document.body.style.backgroundColor = "beige"
+    document.body.style.backgroundColor = bgColorLight;
     docText.forEach(element => {
-        element.style.color = "black";
+        element.style.color = textColorLight;
     });
     modeDarkButton.style.display = "inline-block";
     modeLightButton.style.display = "none";

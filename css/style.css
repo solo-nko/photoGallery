@@ -1,5 +1,17 @@
 /* To-Do:
 - Align header levels.  It's not good practice to skip from h1 to h3. */
+
+/* color palette
+standard(light)
+background: F5F5DC
+text: 001D46
+footer, image borders: 7BBAF5
+
+dark
+background: 001D46
+text: F5F5DC
+
+*/
 html
 {
 	width: 100%;
@@ -8,12 +20,13 @@ html
 body
 {
 	margin: 0 auto;
-	background-color: beige;
+	background-color: #F5F5DC;
 }
 
 .doc-text
 {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #001D46;
 }
 
 h1
@@ -28,7 +41,7 @@ h4
 
 header
 {
-	background-color: #90BAED;
+	background-color: #7BBAF5;
 	padding: 5px 0
 }
 
@@ -36,6 +49,12 @@ nav
 {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+nav a
+{
+	text-decoration: none;
+	color: inherit;
 }
 
 section
@@ -54,7 +73,7 @@ th,
 td,
 img
 {
-	border: 1px solid #5e92d1;
+	border: 1px solid #826956;
 }
 
 #intro
@@ -94,29 +113,30 @@ footer
 {
 	display: flex;
 	justify-content: space-between;
-	background-color: #90BAED;
+	background-color: #7BBAF5;
 	padding: 0.5rem;
-}
-
-#dark-mode
-{
-	display: inline-block;
-	padding: 2px;
-	background-color: #5e92d1;
-	border-radius: 5px;
 }
 
 #light-mode
 {
 	display: none;
 	padding: 2px;
-	background-color: #5e92d1;
+	background-color: #7BBAF5;
 	border-radius: 5px;
+}
+
+.button
+{
+	display: inline-block;
+	padding: 2px;
+	border: #001D46 1px solid;
+	border-radius: 5px;	
 }
 
 .button:hover
 {
 	cursor:pointer;
+	background-color: #649acc;
 }
 
 
@@ -152,7 +172,7 @@ footer
 #contact-form
 {
 	padding: 1rem;
-	background-color: #90BAED;
+	background-color: #7BBAF5;
 	border-radius: 10px;
 	min-width: 150px;
 	max-width: 40vw;
