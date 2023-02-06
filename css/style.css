@@ -142,13 +142,22 @@ footer
 	display: inline-block;
 	padding: 2px;
 	border: #001D46 1px solid;
-	border-radius: 5px;	
+	border-radius: 5px;
+	transition: box-shadow 100ms, transform 100ms;
 }
 
 .button:hover
 {
 	cursor:pointer;
 	background-color: #649acc;
+	box-shadow: 2px 2px #001D46;
+	transform: translate(-2px,-2px);
+}
+
+.button:active
+{
+	box-shadow: none;
+	transform: none;
 }
 
 
@@ -171,8 +180,16 @@ footer
 {
 	height: 100%;
 	object-fit: cover;
+	transition: transform 500ms, box-shadow 500ms;
 }
 
+#gallery img:hover
+{
+	bottom: 5px;
+	right: 5px;
+	box-shadow: 5px 5px #7BBAF5;
+	transform: translate(-5px, -5px);
+}
 
 
 .long-grid-img
