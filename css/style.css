@@ -21,6 +21,12 @@ body
 {
 	margin: 0 auto;
 	background-color: #F5F5DC;
+	height: 100vh;
+}
+
+main
+{
+	height: fit-content;
 }
 
 .doc-text
