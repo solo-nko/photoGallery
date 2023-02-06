@@ -18,7 +18,6 @@ function darkMode()
     document.body.style.backgroundColor = bgColorDark;
     docText.forEach(element => {
         element.style.color = textColorDark;
-    });
     headerFooter.forEach(element => {
         element.style.backgroundColor = accentColorDark;
     });
