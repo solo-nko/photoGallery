@@ -1,5 +1,19 @@
 /* To-Do:
-- Align header levels.  It's not good practice to skip from h1 to h3. */
+Add a carousel
+Build out contact page
+*/
+
+/* color palette
+standard(light)
+background: F5F5DC
+text: 001D46
+footer, image borders: 7BBAF5
+
+dark
+background: 001D46
+text: F5F5DC
+
+*/
 html
 {
 	width: 100%;
@@ -8,12 +22,19 @@ html
 body
 {
 	margin: 0 auto;
-	background-color: beige;
+	background-color: #F5F5DC;
+	height: 100vh;
+}
+
+main
+{
+	height: fit-content;
 }
 
 .doc-text
 {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #001D46;
 }
 
 h1
@@ -21,14 +42,20 @@ h1
 	text-align: center;
 }
 
-h4
+h2
 {
+	margin: 0 0;
+}
+
+#intro h3
+{
+	text-align: center;
 	margin: 0;
 }
 
 header
 {
-	background-color: #90BAED;
+	background-color: #7BBAF5;
 	padding: 5px 0
 }
 
@@ -36,6 +63,12 @@ nav
 {
 	display: flex;
 	justify-content: space-evenly;
+}
+
+nav a
+{
+	text-decoration: none;
+	color: inherit;
 }
 
 section
@@ -54,7 +87,7 @@ th,
 td,
 img
 {
-	border: 1px solid #5e92d1;
+	border: 1px solid #826956;
 }
 
 #intro
@@ -94,44 +127,67 @@ footer
 {
 	display: flex;
 	justify-content: space-between;
-	background-color: #90BAED;
+	background-color: #7BBAF5;
 	padding: 0.5rem;
 }
 
-#dark-mode
+#light-mode
+{
+	display: none;
+}
+
+.button
 {
 	display: inline-block;
 	padding: 2px;
-	background-color: #5e92d1;
+	border: #001D46 1px solid;
 	border-radius: 5px;
+	transition: box-shadow 100ms, transform 100ms;
 }
 
-#dark-mode:hover
+.button:hover
 {
 	cursor:pointer;
+	background-color: #649acc;
+	box-shadow: 2px 2px #001D46;
+	transform: translate(-2px,-2px);
+}
+
+.button:active
+{
+	box-shadow: none;
+	transform: none;
 }
 
 
 /* -----gallery.html specific IDs & selectors----- */
-#gear-table
-{
-	width: 100%;
-}
 
 #gallery
 {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 0.25em;
-	/* grid-auto-flow: dense; */
+}
+
+#gear-table
+{
+	width: 100%;
 }
 
 #gallery img   /* Currently this is NOT actually specific to gallery.html, because the gallery index.html uses the same ID.*/
 {
 	height: 100%;
 	object-fit: cover;
+	transition: transform 500ms, box-shadow 500ms;
 }
 
+#gallery img:hover
+{
+	bottom: 5px;
+	right: 5px;
+	box-shadow: 5px 5px #7BBAF5;
+	transform: translate(-5px, -5px);
+}
 
 
 .long-grid-img
@@ -144,7 +200,7 @@ footer
 #contact-form
 {
 	padding: 1rem;
-	background-color: #90BAED;
+	background-color: #7BBAF5;
 	border-radius: 10px;
 	min-width: 150px;
 	max-width: 40vw;

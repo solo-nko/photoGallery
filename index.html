@@ -8,38 +8,62 @@
 	<title>Nick's Website</title>
 </head>
 <body>
-	<header>
+	<header class="header-footer-theme">
 		<nav class="doc-text">
-			<div><a href="./index.html">Top</a></div>
-			<div><a href="./gallery.html">Photography</a></div>
-			<div><a href="./contact.html">Contact</a></div>
+			<div><a class="nav-link button" href="./index.html">Top</a></div>
+			<div><a class="nav-link button" href="./programming.html">Development</a></div>
+			<div><a class="nav-link button" href="./gallery.html">Photography</a></div>
+			<div><a class="nav-link button" href="./contact.html">Contact</a></div>
 		</nav>
 	</header>
 	<main>
 		<h1 class="doc-text">Nick's Website</h1>
 		<section id="intro">
-			<h4 class="intro-header doc-text">Hi there!</h4>
+			<h3 class="intro-header doc-text">Hi there!</h3>
 			<p class="intro-text doc-text">My name's Nick, and this is my website.  It's a work in progress, which I'm creating and maintaining as an exercise in web design.  Right now I live in Japan, working in the public sector.  <br><br> However, I'm also a photographer by hobby, and I've accumulated a decent amount of photos over the years that I'm pretty proud of.  Below, you can see a sample of them, as well as links to see more.</p>
-			<div class="intro-image"><img src="./assets/wqC_20190312_144834.jpg" alt="intro image"></div>
+			<div class="intro-image"><img src="./assets/wqC_20190417_204113.jpg" alt="portrait of nicholas carmon"></div>
 		</section>
 		<section id="skills">
-			<h3 class="doc-text">Skills</h3>
+			<h2 class="doc-text">Skills</h2>
+			<ul class="doc-text">
+				<li>Native English</li>
+				<ul>
+					<li>Creative Writing</li>
+					<li>JP > ENG Translation</li>
+				</ul>
+				<li>Business Japanese</li>
+				<ul>
+					<li>日本語能力試験2級取得</li>
+					<li>6年間日本に滞在経験</li>
+				</ul>
+				<li>Photography</li>
+				<li>Programming and Information Technology</li>
+			</ul>
 		</section>
 		<section id="hobbies">
-			<h3 class="doc-text">Hobbies & Interests</h3>
+			<h2 class="doc-text">Hobbies & Interests</h2>
+			<ul class="doc-text">
+				<li>Video games & consumer electronics</li>
+				<li>Art and illustration</li>
+				<li>Photography</li>
+				<li>Roleplaying games</li>
+				<li>Biking</li>
+				<li>Podcasts</li>
+			</ul>
 		</section>
 		<section>
-			<h3 class="doc-text">Photo Gallery</h3>
+			<h2 class="doc-text">Photo Gallery</h2>
 			<div id="gallery">
-				<div class="gallery-img"><a href="./food.html" title="food photos"><img src="./assets/wqC_20200721_123237.jpg" alt="curry rice"></a></div>
+				<div class="gallery-img"><a href="./gallery.html"><img src="./assets/wqC_20200721_123237.jpg" alt="curry rice"></a></div>
 				<div class="gallery-img"><a href="./gallery.html"><img src="./assets/wqC_20211025_122633.jpg" alt="autumn waterway"></a></div>
 				<div class="gallery-img"><a href="./gallery.html"><img src="./assets/wqC_20200622_135220.jpg" alt="pollen flower"></a></div>
 				<div class="gallery-img"><a href="./gallery.html"><img src="./assets/wqC_20220625_140811.jpg" alt="white rose"></a></div>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<span id="dark-mode" class="doc-text">Dark Mode</span>
+	<footer class="header-footer-theme">
+		<span id="dark-mode" class="doc-text button">Dark Mode</span>
+		<span id="light-mode" class="doc-text button">Light Mode</span>
 		<span class="doc-text">Copyright 2023 Nick Carmon</span>
 	</footer>    
 <script src="./script.js"></script>
