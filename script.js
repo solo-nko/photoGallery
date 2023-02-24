@@ -2,6 +2,7 @@ const modeDarkButton = document.getElementById("dark-mode");
 const modeLightButton = document.getElementById("light-mode");
 const headerFooter = Array.from(document.getElementsByClassName("header-footer-theme"));
 const docText = Array.from(document.getElementsByClassName("doc-text"));
+const linkText = Array.from(document.getElementsByClassName("link-text"));
 
 //light mode palette
 const bgColorLight = "#F5F5DC";
@@ -17,11 +18,17 @@ function darkMode()
 {
 	document.body.style.backgroundColor = bgColorDark;
 	docText.forEach(element => {
-		element.style.color = textColorDark});
+		element.style.color = textColorDark
+	});
 	
+	linkText.forEach(element => {
+		element.style.color = textColorDark
+	});
+
 	headerFooter.forEach(element => {
 		element.style.backgroundColor = accentColorDark;
 	});
+	
 	modeDarkButton.style.display = "none";
 	modeLightButton.style.display = "inline-block";
 }
@@ -32,9 +39,15 @@ function lightMode()
 	docText.forEach(element => {
 		element.style.color = textColorLight;
 	});
+
+	linkText.forEach(element => {
+		element.style.color = textColorLight;		
+	});
+
 	headerFooter.forEach(element => {
 		element.style.backgroundColor = accentColorLight;
-	})
+	});
+
 	modeDarkButton.style.display = "inline-block";
 	modeLightButton.style.display = "none";
 }
